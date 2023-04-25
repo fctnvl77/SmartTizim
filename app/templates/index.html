@@ -202,33 +202,24 @@ https://templatemo.com/tm-581-kind-heart-charity
 
                                 <p class="mb-0">{{z.jamoa_haqida}}</p>
                             </div>
+                        {% endfor %}    
                             
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="custom-text-box mb-lg-0">
                                         <h5 class="mb-3">Tizimning xususiyatlari</h5>
                                         <ul class="custom-list mt-2">
-                                            <li class="custom-list-item d-flex">
+                            {% for v in Malumot %}
+                                            <li style="width: 300px;" class="custom-list-item d-flex">
                                                 <i class="bi-check custom-text-box-icon me-2"></i>
-                                                Doimiy hisob-kitob, kirim-chiqim va foyda-zarar hisoblarini kuzatib borish
+                                               <span style="width: 50% !important;font-size: 15px;">
+                                                {{v.malumot}}
+                                               </span>
                                             </li>
-
-                                            <li class="custom-list-item d-flex">
-                                                <i class="bi-check custom-text-box-icon me-2"></i>
-                                                Excel kabi dasturlar bilan qilingan integratsiya
-                                            </li>
-
-                                            <li class="custom-list-item d-flex">
-                                                <i class="bi-check custom-text-box-icon me-2"></i>
-                                                Tushunishga oson va qulay ko'rinishdagi interfeys
-                                            </li>
-                                        
-
-                                        <!-- <p>Sed leo nisl, posuere at molestie ac, suscipit auctor quis metus</p> -->
-                        {% endfor %}                
-                                        
+                            {% endfor %}
                                     </div>
                                 </div>
+                           
                         {% for p in Statistika %}
                                 <div class="col-lg-6 col-md-6 col-12">
                                     <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">

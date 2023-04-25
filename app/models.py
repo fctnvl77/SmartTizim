@@ -9,6 +9,7 @@ class Asosiy_rasm(models.Model):
 class Statistika(models.Model):
     nomi = models.CharField(max_length=100)
     soni = models.FloatField()
+    
 
 class Tarif(models.Model):
     nomi = models.CharField(max_length=100)
@@ -30,8 +31,12 @@ class Xizmatlar(models.Model):
 class Xususiyat(models.Model):
     nomi = models.CharField(max_length=100)
     rasm = models.ImageField(upload_to='jamoa_rasm')
+    
 
 class Boglanish(models.Model):
     nomer = models.IntegerField()
     link = models.CharField(max_length=100)
     joy_nomi = models.CharField(max_length=100)
+
+class Malumot(models.Model):
+    malumot = models.CharField(max_length=100)

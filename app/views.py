@@ -23,6 +23,7 @@ def index(request):
     boglanish = Boglanish.objects.all()
     statistika = Statistika.objects.all()
     asosiy_rasm = Asosiy_rasm.objects.all()
+    malumot = Malumot.objects.all()
     contex = {
         'Asosiy_rasm':asosiy_rasm,
         'Jamoa':jamoa,
@@ -30,7 +31,8 @@ def index(request):
         'Xizmatlar':xizmatlar,
         'Xususiyat':xususiyat,
         'Boglanish':boglanish,
-        'Statistika':statistika
+        'Statistika':statistika,
+        'Malumot':malumot,
     }
     return render(request, ['index.html', 'xususiyat.html'], contex)
 
